@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="uw9-dS-1wu">
-                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uw9-dS-1wu" secondAttribute="trailing" id="Qfz-IS-mvj"/>
-                            <constraint firstItem="uw9-dS-1wu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ZEg-RZ-dVI"/>
-                            <constraint firstItem="uw9-dS-1wu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cpw-QV-6fo"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="uw9-dS-1wu" secondAttribute="bottom" id="uIQ-6K-4Cv"/>
+                            <constraint firstAttribute="trailing" secondItem="uw9-dS-1wu" secondAttribute="trailing" id="Qfz-IS-mvj"/>
+                            <constraint firstItem="uw9-dS-1wu" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="ZEg-RZ-dVI"/>
+                            <constraint firstItem="uw9-dS-1wu" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="cpw-QV-6fo"/>
+                            <constraint firstAttribute="bottom" secondItem="uw9-dS-1wu" secondAttribute="bottom" id="uIQ-6K-4Cv"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -3,8 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		1AF4CBEA2E493923007529CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4CBE92E493923007529CC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		1AF4CB832E4905A1007529CC /* PBXContainerItemProxy */ = {
@@ -27,24 +31,13 @@
 		1AF4CB742E49059D007529CC /* FastingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF4CB822E4905A1007529CC /* FastingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF4CB8C2E4905A1007529CC /* FastingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF4CBE92E493923007529CC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1AF4CB762E49059D007529CC /* FastingApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FastingApp;
-			sourceTree = "<group>";
-		};
-		1AF4CB852E4905A1007529CC /* FastingAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FastingAppTests;
-			sourceTree = "<group>";
-		};
-		1AF4CB8F2E4905A1007529CC /* FastingAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FastingAppUITests;
-			sourceTree = "<group>";
-		};
+		1AF4CB762E49059D007529CC /* FastingApp */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = FastingApp; sourceTree = "<group>"; };
+		1AF4CB852E4905A1007529CC /* FastingAppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = FastingAppTests; sourceTree = "<group>"; };
+		1AF4CB8F2E4905A1007529CC /* FastingAppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = FastingAppUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +68,7 @@
 		1AF4CB6B2E49059D007529CC = {
 			isa = PBXGroup;
 			children = (
+				1AF4CBE92E493923007529CC /* LaunchScreen.storyboard */,
 				1AF4CB762E49059D007529CC /* FastingApp */,
 				1AF4CB852E4905A1007529CC /* FastingAppTests */,
 				1AF4CB8F2E4905A1007529CC /* FastingAppUITests */,
@@ -187,6 +181,7 @@
 				};
 			};
 			buildConfigurationList = 1AF4CB6F2E49059D007529CC /* Build configuration list for PBXProject "FastingApp" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,7 +190,6 @@
 			);
 			mainGroup = 1AF4CB6B2E49059D007529CC;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 1AF4CB752E49059D007529CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -212,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF4CBEA2E493923007529CC /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

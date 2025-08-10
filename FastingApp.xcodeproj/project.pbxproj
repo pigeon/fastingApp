@@ -181,7 +181,7 @@
 				};
 			};
 			buildConfigurationList = 1AF4CB6F2E49059D007529CC /* Build configuration list for PBXProject "FastingApp" */;
-			compatibilityVersion = "Xcode 15.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (

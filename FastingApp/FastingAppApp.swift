@@ -7,11 +7,24 @@
 
 import SwiftUI
 
+//@main
+//struct FastingAppApp: App {
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//        }
+//    }
+//}
+
+
 @main
-struct FastingAppApp: App {
+struct FastingApp: App {
+    @StateObject private var vm = FastingViewModel()
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+        WindowGroup { RootView().environmentObject(vm) }
+        #if os(watchOS)
+        WKNotificationScene(controller: NotificationController.self, category: "fasting")
+        #endif
     }
 }

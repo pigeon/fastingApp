@@ -1,0 +1,82 @@
+# macOS cruft
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+DerivedData/
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# Xcode result bundles & coverage
+*.xcresult
+*.xccoverage
+*.profdata
+
+# Archives and symbols
+*.xcarchive
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Swift Package Manager
+.build/
+.swiftpm/
+# For apps, you typically COMMIT Package.resolved for reproducible builds:
+# (so we DO NOT ignore it)
+
+# CocoaPods
+# Teams vary here. If you do NOT want Pods in git, uncomment the next line:
+# Pods/
+# Podfile.lock should be committed for apps.
+
+# Carthage
+Carthage/Build/
+# (Carthage/Checkouts is often kept; ignore it if your team prefers.)
+# Carthage/Checkouts/
+
+# Accio
+.accio/
+Dependencies/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Tuist
+Tuist/Cache/
+Tuist/Derived/
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Editor settings
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Optional: ignore workspace noise (safe to keep if you prefer)
+**/IDEWorkspaceChecks.plist
+**/WorkspaceSettings.xcsettings
+
+# Optional: secrets (uncomment if you manage these via CI/secret storage)
+# *.p12
+# *.mobileprovision
+# GoogleService-Info.plist

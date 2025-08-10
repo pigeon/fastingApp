@@ -10,7 +10,7 @@ import Combine
 // MARK: - Models
 
 enum FastingPlan: Equatable, Identifiable {
-    case sixteenEight, eighteenSix, twentyFour, custom(hours: Int)
+    case sixteenEight, eighteenSix, twentyHourFast, custom(hours: Int)
 
     var id: String { name }
 
@@ -18,7 +18,7 @@ enum FastingPlan: Equatable, Identifiable {
         switch self {
         case .sixteenEight: return 16
         case .eighteenSix: return 18
-        case .twentyFour: return 20
+        case .twentyHourFast: return 20
         case .custom(let h): return max(1, h)
         }
     }
@@ -27,12 +27,12 @@ enum FastingPlan: Equatable, Identifiable {
         switch self {
         case .sixteenEight: return "16:8"
         case .eighteenSix: return "18:6"
-        case .twentyFour: return "20:4"
+        case .twentyHourFast: return "20:4"
         case .custom(let h): return "Custom (\(h):\(24 - min(24, h)))"
         }
     }
 
-    static var presets: [FastingPlan] { [.sixteenEight, .eighteenSix, .twentyFour] }
+    static var presets: [FastingPlan] { [.sixteenEight, .eighteenSix, .twentyHourFast] }
 }
 
 struct ReminderSettings: Codable, Equatable {
@@ -83,7 +83,7 @@ final class Persistence {
         switch plan {
         case .sixteenEight: defaults.set("16:8", forKey: planKey)
         case .eighteenSix: defaults.set("18:6", forKey: planKey)
-        case .twentyFour: defaults.set("20:4", forKey: planKey)
+        case .twentyHourFast: defaults.set("20:4", forKey: planKey)
         case .custom(let h): defaults.set("custom:\(h)", forKey: planKey)
         }
     }
@@ -91,7 +91,7 @@ final class Persistence {
         guard let s = defaults.string(forKey: planKey) else { return .sixteenEight }
         if s == "16:8" { return .sixteenEight }
         if s == "18:6" { return .eighteenSix }
-        if s == "20:4" { return .twentyFour }
+        if s == "20:4" { return .twentyHourFast }
         if s.hasPrefix("custom:"), let h = Int(s.split(separator: ":").last ?? "16") { return .custom(hours: h) }
         return .sixteenEight
     }
@@ -459,7 +459,7 @@ struct SettingsView: View {
                         switch vm.plan {
                         case .sixteenEight: return 0
                         case .eighteenSix: return 1
-                        case .twentyFour: return 2
+                        case .twentyHourFast: return 2
                         case .custom: return 3
                         }
                     },
@@ -467,7 +467,7 @@ struct SettingsView: View {
                         switch idx {
                         case 0: vm.plan = .sixteenEight
                         case 1: vm.plan = .eighteenSix
-                        case 2: vm.plan = .twentyFour
+                        case 2: vm.plan = .twentyHourFast
                         default: vm.plan = .custom(hours: Int(customHours))
                         }
                     }

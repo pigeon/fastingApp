@@ -38,7 +38,7 @@ final class FastingViewModel: ObservableObject {
         Persistence.shared.saveSessions(sessions)
         if reminders.enabled && reminders.endAlert {
             _ = await LocalNotify.requestAuth()
-            await LocalNotify.scheduleEndNotification(for: s, preEndMinutes: reminders.preEndMinutes, snoozeMinutes: reminders.snoozeMinutes)
+            await LocalNotify.scheduleEndNotification(for: s, preEndMinutes: reminders.preEndMinutes, snoozeMinutes: reminders.snoozeMinutes, is24h: timeFormat24h)
         }
     }
 

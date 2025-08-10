@@ -13,7 +13,7 @@ enum LocalNotify {
         }
     }
 
-    static func scheduleEndNotification(for session: FastSession, preEndMinutes: Int?, snoozeMinutes: Int?) async {
+    static func scheduleEndNotification(for session: FastSession, preEndMinutes: Int?, snoozeMinutes: Int?, is24h: Bool) async {
         let center = UNUserNotificationCenter.current()
         center.removeAllPendingNotificationRequests()
         let now = Date()
@@ -22,7 +22,7 @@ enum LocalNotify {
             guard fire > now else { return }
             let content = UNMutableNotificationContent()
             content.title = title
-            content.body = "Your \(session.planHours):\(24 - session.planHours) fast finishes at \(timeString(fire))."
+            content.body = "Your \(session.planHours):\(24 - session.planHours) fast finishes at \(Date.shortTimeString(fire, is24h: is24h))."
             content.sound = .default
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: fire.timeIntervalSinceNow, repeats: false)
             center.add(UNNotificationRequest(identifier: id, content: content, trigger: trigger))
@@ -50,10 +50,4 @@ enum LocalNotify {
         try await center.add(UNNotificationRequest(identifier: UUID().uuidString + ".snooze", content: content, trigger: trigger))
     }
 
-    static func timeString(_ date: Date) -> String {
-        let fmt = DateFormatter()
-        fmt.timeStyle = .short
-        fmt.dateStyle = .none
-        return fmt.string(from: date)
-    }
 }

@@ -17,7 +17,7 @@ struct HomeView: View {
             Group {
                 if vm.status == .fasting, let s = vm.active {
                     Text("Remaining: \(FastingViewModel.hmsString(from: s.scheduledEnd.timeIntervalSince(now)))")
-                    Text("Start: \(timeString(s.start))  |  End: \(timeString(s.scheduledEnd))")
+                    Text("Start: \(Date.shortTimeString(s.start, is24h: vm.timeFormat24h))  |  End: \(Date.shortTimeString(s.scheduledEnd, is24h: vm.timeFormat24h))")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                     Button(role: .destructive) { vm.endFast() } label: { Text("Stop Fast") }
@@ -39,12 +39,6 @@ struct HomeView: View {
         .navigationTitle("Fasting")
     }
 
-    func timeString(_ d: Date) -> String {
-        let f = DateFormatter()
-        f.timeStyle = .short
-        f.dateStyle = .none
-        return f.string(from: d)
-    }
 }
 
 #Preview("Home (Fasting)") {

@@ -10,9 +10,10 @@
 		1AF4CBEA2E493923007529CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4CBE92E493923007529CC /* LaunchScreen.storyboard */; };
 		1AFE150F2E49490700EEA85C /* FastingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE14F42E49490700EEA85C /* FastingPlan.swift */; };
 		1AFE15102E49490700EEA85C /* FastSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE14F52E49490700EEA85C /* FastSession.swift */; };
-		1AFE15112E49490700EEA85C /* LocalNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE14F72E49490700EEA85C /* LocalNotify.swift */; };
-		1AFE15122E49490700EEA85C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE14F82E49490700EEA85C /* Persistence.swift */; };
-		1AFE15132E49490700EEA85C /* FastingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE14FA2E49490700EEA85C /* FastingViewModel.swift */; };
+1AFE15112E49490700EEA85C /* LocalNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE14F72E49490700EEA85C /* LocalNotify.swift */; };
+1AFE15122E49490700EEA85C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE14F82E49490700EEA85C /* Persistence.swift */; };
+6238F1D7FDE8459E9E0FAA62 /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29486D0F13E74745B0F4A9D4 /* Date+Formatting.swift */; };
+1AFE15132E49490700EEA85C /* FastingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE14FA2E49490700EEA85C /* FastingViewModel.swift */; };
 		1AFE15142E49490700EEA85C /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE14FC2E49490700EEA85C /* ProgressRing.swift */; };
 		1AFE15152E49490700EEA85C /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE14FE2E49490700EEA85C /* HistoryView.swift */; };
 		1AFE15162E49490700EEA85C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE15002E49490700EEA85C /* HomeView.swift */; };
@@ -51,9 +52,10 @@
 		1AF4CBE92E493923007529CC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AFE14F42E49490700EEA85C /* FastingPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingPlan.swift; sourceTree = "<group>"; };
 		1AFE14F52E49490700EEA85C /* FastSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastSession.swift; sourceTree = "<group>"; };
-		1AFE14F72E49490700EEA85C /* LocalNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotify.swift; sourceTree = "<group>"; };
-		1AFE14F82E49490700EEA85C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		1AFE14FA2E49490700EEA85C /* FastingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingViewModel.swift; sourceTree = "<group>"; };
+                1AFE14F72E49490700EEA85C /* LocalNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotify.swift; sourceTree = "<group>"; };
+                1AFE14F82E49490700EEA85C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+                29486D0F13E74745B0F4A9D4 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
+                1AFE14FA2E49490700EEA85C /* FastingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingViewModel.swift; sourceTree = "<group>"; };
 		1AFE14FC2E49490700EEA85C /* ProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
 		1AFE14FE2E49490700EEA85C /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		1AFE15002E49490700EEA85C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -124,15 +126,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		1AFE14F92E49490700EEA85C /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				1AFE14F72E49490700EEA85C /* LocalNotify.swift */,
-				1AFE14F82E49490700EEA85C /* Persistence.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
+                1AFE14F92E49490700EEA85C /* Utilities */ = {
+                        isa = PBXGroup;
+                        children = (
+                                1AFE14F72E49490700EEA85C /* LocalNotify.swift */,
+                                1AFE14F82E49490700EEA85C /* Persistence.swift */,
+                                29486D0F13E74745B0F4A9D4 /* Date+Formatting.swift */,
+                        );
+                        path = Utilities;
+                        sourceTree = "<group>";
+                };
 		1AFE14FB2E49490700EEA85C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,9 +384,10 @@
 			files = (
 				1AFE150F2E49490700EEA85C /* FastingPlan.swift in Sources */,
 				1AFE15102E49490700EEA85C /* FastSession.swift in Sources */,
-				1AFE15112E49490700EEA85C /* LocalNotify.swift in Sources */,
-				1AFE15122E49490700EEA85C /* Persistence.swift in Sources */,
-				1AFE15132E49490700EEA85C /* FastingViewModel.swift in Sources */,
+1AFE15112E49490700EEA85C /* LocalNotify.swift in Sources */,
+1AFE15122E49490700EEA85C /* Persistence.swift in Sources */,
+6238F1D7FDE8459E9E0FAA62 /* Date+Formatting.swift in Sources */,
+1AFE15132E49490700EEA85C /* FastingViewModel.swift in Sources */,
 				1AFE15142E49490700EEA85C /* ProgressRing.swift in Sources */,
 				1AFE15152E49490700EEA85C /* HistoryView.swift in Sources */,
 				1AFE15162E49490700EEA85C /* HomeView.swift in Sources */,

@@ -22,9 +22,10 @@
 		1AFE151A2E49490700EEA85C /* WatchViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE15082E49490700EEA85C /* WatchViews.swift */; };
 		1AFE151B2E49490700EEA85C /* FastingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE150D2E49490700EEA85C /* FastingAppApp.swift */; };
 		1AFE151C2E49490700EEA85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFE150B2E49490700EEA85C /* Assets.xcassets */; };
-		1AFE151F2E49490C00EEA85C /* FastingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE151D2E49490C00EEA85C /* FastingAppTests.swift */; };
-		1AFE15232E49491100EEA85C /* FastingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE15202E49491100EEA85C /* FastingAppUITests.swift */; };
-		1AFE15242E49491100EEA85C /* FastingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE15212E49491100EEA85C /* FastingAppUITestsLaunchTests.swift */; };
+                1AFE151F2E49490C00EEA85C /* FastingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE151D2E49490C00EEA85C /* FastingAppTests.swift */; };
+                5913702217BB4CD687ACDCED /* DateFormattingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DD561CCF1E45CF8DD4C363 /* DateFormattingTests.swift */; };
+                1AFE15232E49491100EEA85C /* FastingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE15202E49491100EEA85C /* FastingAppUITests.swift */; };
+                1AFE15242E49491100EEA85C /* FastingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE15212E49491100EEA85C /* FastingAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +65,9 @@
 		1AFE150B2E49490700EEA85C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AFE150C2E49490700EEA85C /* FastingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FastingApp.entitlements; sourceTree = "<group>"; };
 		1AFE150D2E49490700EEA85C /* FastingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingAppApp.swift; sourceTree = "<group>"; };
-		1AFE151D2E49490C00EEA85C /* FastingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingAppTests.swift; sourceTree = "<group>"; };
-		1AFE15202E49491100EEA85C /* FastingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingAppUITests.swift; sourceTree = "<group>"; };
+                1AFE151D2E49490C00EEA85C /* FastingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingAppTests.swift; sourceTree = "<group>"; };
+                42DD561CCF1E45CF8DD4C363 /* DateFormattingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormattingTests.swift; sourceTree = "<group>"; };
+                1AFE15202E49491100EEA85C /* FastingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingAppUITests.swift; sourceTree = "<group>"; };
 		1AFE15212E49491100EEA85C /* FastingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,14 +227,15 @@
 			path = FastingApp;
 			sourceTree = "<group>";
 		};
-		1AFE151E2E49490C00EEA85C /* FastingAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				1AFE151D2E49490C00EEA85C /* FastingAppTests.swift */,
-			);
-			path = FastingAppTests;
-			sourceTree = "<group>";
-		};
+                1AFE151E2E49490C00EEA85C /* FastingAppTests */ = {
+                        isa = PBXGroup;
+                        children = (
+                                1AFE151D2E49490C00EEA85C /* FastingAppTests.swift */,
+                                42DD561CCF1E45CF8DD4C363 /* DateFormattingTests.swift */,
+                        );
+                        path = FastingAppTests;
+                        sourceTree = "<group>";
+                };
 		1AFE15222E49491100EEA85C /* FastingAppUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,14 +398,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AF4CB7E2E4905A1007529CC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AFE151F2E49490C00EEA85C /* FastingAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+                1AF4CB7E2E4905A1007529CC /* Sources */ = {
+                        isa = PBXSourcesBuildPhase;
+                        buildActionMask = 2147483647;
+                        files = (
+                                1AFE151F2E49490C00EEA85C /* FastingAppTests.swift in Sources */,
+                                5913702217BB4CD687ACDCED /* DateFormattingTests.swift in Sources */,
+                        );
+                        runOnlyForDeploymentPostprocessing = 0;
+                };
 		1AF4CB882E4905A1007529CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;

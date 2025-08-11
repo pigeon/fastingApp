@@ -1,8 +1,8 @@
 import XCTest
 @testable import FastingApp
 
+@MainActor
 final class DateFormattingTests: XCTestCase {
-    @MainActor
     func testHmsStringFormatting() {
         XCTAssertEqual(FastingViewModel.hmsString(from: 0), "0h 00m")
         XCTAssertEqual(FastingViewModel.hmsString(from: 3599), "0h 59m")
